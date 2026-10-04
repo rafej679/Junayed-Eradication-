@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WELCOME I'M</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      WELCOME I'M
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
+
+      <a href="#" onclick="showPage('home')">HOME</a>
+
+      <a href="#" onclick="showPage('about')">ABOUT</a>
+
+      <a href="#" onclick="showPage('contact')">CONTACT US</a>
+
+      <a href="#" onclick="showPage('message')">MESSAGE US</a>
+
+    </nav>
+
+  </header>
+
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+
+      <div class="welcome-box">
+
+        <h1>WELCOME I'M</h1>
+
+        <p>Welcome to my website</p>
+
+        <div class="home-buttons">
+
+          <button onclick="showPage('contact')">
+            CONTACT US
+          </button>
+
+          <button onclick="showPage('message')">
+            MESSAGE US
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+
+      <div class="card">
+
+        <h2>ABOUT</h2>
+
+        <p>
+          আমাদের ওয়েব সাইটে আসার জন্য আপনাকে স্বাগতম।
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+
+      <div class="card">
+
+        <h2>CONTACT US</h2>
+
+        <div class="contact-item">
+
+          <span>📞 PHONE</span>
+
+          <a href="tel:+919830507125">
+            +91 9830507125
+          </a>
+
+        </div>
+
+        <div class="contact-item">
+
+          <span>✉️ GMAIL</span>
+
+          <a href="mailto:skazim4332@gmail.com">
+            skazim4332@gmail.com
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MESSAGE US -->
+    <section id="message" class="page">
+
+      <div class="message-card">
+
+        <h2>MESSAGE US</h2>
+
+        <!--
+          SENT US চাপলে FormSubmit-এর মাধ্যমে
+          আপনার Gmail-এ তথ্য পাঠানোর চেষ্টা করবে।
+        -->
+
+        <form
+          action="https://formsubmit.co/skazim4332@gmail.com"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Message From My Website"
+          >
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="true"
+          >
+
+
+          <label>YOUR NAME</label>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          >
+
+
+          <label>MOBILE</label>
+
+          <input
+            type="tel"
+            name="mobile"
+            placeholder="Enter mobile number"
+            required
+          >
+
+
+          <label>EMAIL</label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          >
+
+
+          <label>DICRIBE</label>
+
+          <textarea
+            name="message"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+
+          <button
+            type="submit"
+            class="send-btn"
+          >
+            SENT US
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="follow-box">
+
+      <button>FOLLOW</button>
+
+    </div>
+
+    <p>📞 +91 9830507125</p>
+
+    <p>✉️ skazim4332@gmail.com</p>
+
+    <p class="copyright">
+      2026-27 © RIGHT NOW
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
